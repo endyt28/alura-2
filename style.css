@@ -1,0 +1,225 @@
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fafdfa;
+}
+
+/* CABEÇALHO */
+header {
+    background-color: #1b5e20; /* Verde escuro */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #a5d6a7; /* Verde claro ao passar o mouse */
+}
+
+/* SEÇÃO HERO (BANNER INICIAL) */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #ff9800; /* Laranja para destaque */
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.botao:hover {
+    background-color: #e65100;
+}
+
+/* CONTEÚDO PRINCIPAL (FLEXBOX) */
+.container {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.container h2 {
+    color: #1b5e20;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.cards-tecnologias {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Faz quebrar de linha em telas pequenas */
+    gap: 20px;
+}
+
+/* EXEMPLO DE BOX MODEL (PADDING, MARGIN, BORDER) */
+.card {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-top: 5px solid #2e7d32; /* Detalhe em verde na borda superior */
+    border-radius: 8px;
+    padding: 30px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efeito flutuante */
+}
+
+.card h3 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+/* SEÇÃO DO SIMULADOR INTERATIVO */
+.simulador-container {
+    background-color: #f1f8e9;
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.calculadora {
+    background-color: white;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.calculadora label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2e7d32;
+}
+
+.calculadora input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #a5d6a7;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.calculadora button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.calculadora button:hover {
+    background-color: #1b5e20;
+}
+
+/* Esconde o resultado até o botão ser clicado */
+.resultado-escondido {
+    display: none;
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border-left: 5px solid #2e7d32;
+    border-radius: 4px;
+    text-align: left;
+    animation: surgindo 0.5s ease-out;
+}
+
+@keyframes surgindo {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* SEÇÃO CONCLUSÃO */
+.conclusao {
+    background-color: #e8f5e9; /* Fundo verde bem claro */
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.conclusao h2 {
+    color: #1b5e20;
+    margin-bottom: 15px;
+}
+
+.conclusao p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 14px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
