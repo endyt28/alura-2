@@ -45,5 +45,6 @@ Durante o desenvolvimento desta página através do curso, eu pude dominar conce
 ├── README.md           # Documentação do projeto (Este arquivo)
 └── imagens/            # Pasta contendo as fotos e ícones do site
 
-##Clique no Link Para Visualizar o Projeto:
- https://endyt28.github.io/alura-2/
+## 🔗 Como visualizar o projeto
+Você pode visualizar o site em funcionamento direto pelo navegador através do link do GitHub Pages:
+👉 [CLIQUE AQUI PARA VER O SITE](https://endyt28.github.io/agrinho/)
