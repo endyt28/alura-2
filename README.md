@@ -44,3 +44,5 @@ Durante o desenvolvimento desta página através do curso, eu pude dominar conce
 ├── script.js           # Arquivo de lógica da calculadora (JavaScript)
 ├── README.md           # Documentação do projeto (Este arquivo)
 └── imagens/            # Pasta contendo as fotos e ícones do site
+
+##Clique no Link Para Visualizar o Projeto: https://endyt28.github.io/alura-2/
